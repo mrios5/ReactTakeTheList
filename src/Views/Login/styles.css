@@ -1,0 +1,37 @@
+
+.viewcontainer {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  width: 1000px;
+}
+
+
+.loginButton {
+  width: 300px;
+  height: 200px;
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow:  12px 12px 30px #b3b3b3,
+             -12px -12px 30px #ffffff;
+}
+
+.loginButton:hover {
+  width: 300px;
+  height: 200px;
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow:  18px 18px 40px #b3b3b3,
+             -18px -18px 40px #ffffff;
+}
+
+
+.loginButton:focus {
+  width: 300px;
+  height: 200px;
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: inset 18px 18px 40px #b3b3b3,
+              inset -18px -18px 40px #ffffff;
+}

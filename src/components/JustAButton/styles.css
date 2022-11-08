@@ -1,0 +1,27 @@
+.JustButton {
+    width: 200px;
+    height: 100px;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow:  12px 12px 30px #b3b3b3,
+               -12px -12px 30px #ffffff;
+  }
+  
+  .JustButton:hover {
+    width: 200px;
+    height: 100px;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow:  18px 18px 40px #b3b3b3,
+               -18px -18px 40px #ffffff;
+  }
+  
+  
+  .JustButton:focus {
+    width: 200px;
+    height: 100px;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow: inset 18px 18px 40px #b3b3b3,
+                inset -18px -18px 40px #ffffff;
+  }

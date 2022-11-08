@@ -1,12 +1,14 @@
 import { Button } from '@mui/material'
-import { Container } from '@mui/system'
+import { Container, Box } from '@mui/system'
 import React from 'react'
+import './styles.css'
 
 const LoginPage = () => {
   return (
-    <Container>
-        <Button href='/mainpage'>Login</Button>
-    </Container>
+    <Box className='viewcontainer'>
+      <Box>Login</Box>
+      <Button href='/mainpage' className='loginButton' title='Login'>Login</Button>
+    </Box>
   )
 }
 

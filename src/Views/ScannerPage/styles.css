@@ -7,15 +7,30 @@ html {
     align-items: center;
 }
 
+.container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    height: 500px;
+    border-width: 10px;
+    border-color: black;
+    border-radius: 20px;
+    background: #e0e0e0;
+    box-shadow:  18px 18px 36px #989898,
+             -18px -18px 36px #ffffff;
+}
 
 .camera {
     display: none;
 }
 .capture {
+    border-width: 10px;
+    border-color: black;
     border-radius: 20px;
-    background: #e0e0e0;
-    box-shadow:  18px 18px 36px #989898,
-             -18px -18px 36px #ffffff;
+    width: 680;
+    height: 480;
 }
 
 .skull {

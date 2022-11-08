@@ -1,21 +1,13 @@
 import AR from './aruco'
+import students from '../assets'
+import LaLista from './tryToSave';
+
 var video, canvas, context, imageData, detector;
-
-
-const student = [
-    {"id": 0, "name": "foo"},
-    {"id": 1, "name": "Manuel"},
-    {"id": 2, "name": "Gerardo"},
-    {"id": 3, "name": "Angel"},
-    {"id": 4, "name": "Luis"},
-    {"id": 5, "name": "Skittles"},
-    {"id": 6, "name": "Jeff"}
-]
 
 const  onLoad = () => {
   video = document.getElementById("video");
   canvas = document.getElementById("canvas");
-  context = canvas.getContext("2d");
+  context = canvas.getContext("2d", { willReadFrequently: true });
 
   canvas.width = parseInt(canvas.style.width);
   canvas.height = parseInt(canvas.style.height);
@@ -105,9 +97,9 @@ const  drawCorners = (markers) => {
 const  drawId = (markers) =>  {
   var corners, corner, x, y, i, j;
   
-  context.strokeStyle = "lightgreen";
-  context.font = 'bold 48px serif'
-  context.lineWidth = 5;
+  context.strokeStyle = "black";
+  context.font = '25px Arial';
+  context.lineWidth = 2;
   
   for (i = 0; i !== markers.length; ++ i){
     corners = markers[i].corners;
@@ -123,7 +115,9 @@ const  drawId = (markers) =>  {
     }
 
     //context.strokeText(`Got it ${markers[i].id}`, x, y)
-    context.strokeText(`Got it ${student[markers[i].id].name}`, x, y)
+    context.strokeText(`${students[markers[i].id].name}`, x, y)
+
+    LaLista(students[markers[i].id].name)
   }
 }
 
