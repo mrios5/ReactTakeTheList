@@ -1,0 +1,8 @@
+.camera {
+    display: none;
+}
+.capture {
+    border-width: 10px;
+    border-color: black;
+    border-radius: 20px;
+}

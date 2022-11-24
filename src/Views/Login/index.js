@@ -6,7 +6,7 @@ import './styles.css'
 const LoginPage = () => {
   return (
     <Box className='viewcontainer'>
-      <Box>Login</Box>
+      <Box className='title' >Login</Box>
       <Button href='/mainpage' className='loginButton' title='Login'>Login</Button>
     </Box>
   )

@@ -1,33 +1,33 @@
-.container {
+.containerM {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 500px;
-    width: 500px;
+    width: 600px;
     font-size: 40px;
+    margin-top: 10px;
 }
 
-.JustButton {
+.JustButtonM {
     border-width: 0px;
     font-size: 25px;
     color: grey;
     font-weight: bold;
     width: 200px;
     height: 100px;
-    border-radius: 5px;
     background: #e0e0e0;
-    box-shadow:  7px 7px 14px #b3b3b3,
-                 -7px -7px 14px #ffffff;
+    box-shadow:  12px 12px 30px #b3b3b3,
+                -12px -12px 30px #ffffff;
     transition: 0.5s;
   }
   
-.JustButton:hover {
+.JustButtonM:hover {
     width: 210px;
     height: 110px;
     font-size: 15px;
     background: #e0e0e0;
-    box-shadow:  32px 32px 64px #b3b3b3,
-                 -32px -32px 64px #ffffff;
+    box-shadow:  18px 18px 40px #b3b3b3,
+                -18px -18px 40px #ffffff;
     transition: 0.5s;
   }
 

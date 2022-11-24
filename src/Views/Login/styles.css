@@ -20,7 +20,6 @@
 .loginButton:hover {
   width: 300px;
   height: 200px;
-  border-radius: 50px;
   background: #e0e0e0;
   box-shadow:  18px 18px 40px #b3b3b3,
              -18px -18px 40px #ffffff;
@@ -30,8 +29,15 @@
 .loginButton:focus {
   width: 300px;
   height: 200px;
-  border-radius: 50px;
   background: #e0e0e0;
   box-shadow: inset 18px 18px 40px #b3b3b3,
               inset -18px -18px 40px #ffffff;
+}
+
+.title {
+  margin-top: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  color: grey;
+  font-family: monospace;
 }

@@ -5,14 +5,18 @@ import './styles.css'
 
 const MainPage = () => {
   return (
-    <Box className='container'>
+    <>
+    <Box className='title'>Selecciona tu opcion</Box>
+    <Container className='containerM'>
         <Button
           href='/scanner'
-          className='JustButton'>Scanner</Button>
+          className='JustButtonM'
+          style={{marginRight: '10px'}}>Scanner</Button>
         <Button 
           href='/grupos' 
-          className='JustButton'>Grupos</Button>
-    </Box>
+          className='JustButtonM'>Grupos</Button>
+    </Container>
+    </>
   )
 }
 

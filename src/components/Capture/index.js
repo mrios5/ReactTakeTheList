@@ -3,34 +3,18 @@ import React, { useState } from 'react'
 import './styles.css'
 
 const CaptureButton = () => {
-
-	const [color, setColor] = useState('yellowgreen')
-	const [text, setText] = useState('Tomar Lista')
 	const [status, setStatus] = useState(false)
 	
-	const changeStatus = () => {
-		if(status){
-			setColor('red')
-			setText('Parar Lista')
-			setStatus(false)
-		}
-		else{
-			setColor('yellowgreen')
-			setText('Tomar Lista')
-			setStatus(true)
-		}
-	}
-
   return (
     <div className="App">
       <Button
 				style={{
-					backgroundColor: color,
+					backgroundColor: status ? 'red' : 'yellowgreen',
 					color:'black',
 					marginTop: '40px'
 				}} 
-				onClick={()=>{ changeStatus() }}>
-				{text}
+				onClick={()=>{ status ? setStatus(false) : setStatus(true)}}>
+				{!status ? 'Tomar Lista' : 'Para Lista'}
 			</Button>
     </div>
   );
